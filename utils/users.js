@@ -1,3 +1,17 @@
+/**
+ * Week 08 utility file for user related operations
+ *
+ * NOTE: This file will be abandoned during week 09 when a database will be used
+ * to store all data. 
+ */
+
+/**
+ * Use this object to store users
+ *
+ * An object is used so that users can be reset to known values in tests
+ * a plain const could not be redefined after initialization but object
+ * properties do not have that restriction.
+ */
 const data = {
   // make copies of users (prevents changing from outside this module/file)
   users: require('../users.json').map(user => ({ ...user })),
