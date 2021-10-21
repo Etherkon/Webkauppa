@@ -98,7 +98,6 @@ const handleRequest = async (request, response) => {
     return renderPublic(fileName, response);
   }
 
-  // TODO: 8.5 Implement view, update and delete a single user by ID (GET, PUT, DELETE)
   // You can use parseBodyJson(request) from utils/requestUtils.js to parse request body
   if (matchUserId(filePath)) {
 
